@@ -8,11 +8,22 @@ from snowflake.snowpark import Session
 st.set_page_config(page_title="Rhodes Analytics", layout="wide")
 
 # ============================
-# SNOWFLAKE SESSION (TOML + CACHED)
+# SNOWFLAKE SESSION (SAFE + CACHED)
 # ============================
 @st.cache_resource
 def get_session():
-    return Session.builder.configs(st.secrets["snowflake"]).create()
+
+    connection_parameters = {
+        "account": st.secrets["SNOWFLAKE_ACCOUNT"],
+        "user": st.secrets["SNOWFLAKE_USER"],
+        "password": st.secrets["SNOWFLAKE_PASSWORD"],
+        "role": st.secrets["SNOWFLAKE_ROLE"],
+        "warehouse": st.secrets["SNOWFLAKE_WAREHOUSE"],
+        "database": st.secrets["SNOWFLAKE_DATABASE"],
+        "schema": st.secrets["SNOWFLAKE_SCHEMA"],
+    }
+
+    return Session.builder.configs(connection_parameters).create()
 
 session = get_session()
 
