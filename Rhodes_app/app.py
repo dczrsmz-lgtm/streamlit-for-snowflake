@@ -1,6 +1,23 @@
 import pandas as pd
 import streamlit as st
 from snowflake.snowpark.context import get_active_session
+from snowflake.snowpark import Session
+
+@st.cache_resource
+def get_session():
+    connection_parameters = {
+        "account": st.secrets["SNOWFLAKE_ACCOUNT"],
+        "user": st.secrets["SNOWFLAKE_USER"],
+        "password": st.secrets["SNOWFLAKE_PASSWORD"],
+        "role": st.secrets["SNOWFLAKE_ROLE"],
+        "warehouse": st.secrets["SNOWFLAKE_WAREHOUSE"],
+        "database": st.secrets["SNOWFLAKE_DATABASE"],
+        "schema": st.secrets["SNOWFLAKE_SCHEMA"],
+    }
+
+    return Session.builder.configs(connection_parameters).create()
+
+session = get_session()
 
 # ============================
 # PAGE CONFIG + THEME
