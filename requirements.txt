@@ -1,0 +1,13 @@
+#py -m pip install pandas openpyxl snowflake-connector-python
+#py -m pip install --upgrade snowflake-connector-python
+#py -m pip install --upgrade snowflake-connector-python[pandas]
+#py -m pip install streamlit
+#py -m pip install matplotlib
+#py -m pip install plotly
+
+streamlit
+pandas
+plotly
+openpyxl
+snowflake-snowpark-python
+snowflake-connector-python

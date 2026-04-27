@@ -1,0 +1,27 @@
+version: 2
+
+models:
+
+  - name: stg_homebuilder_sales
+    description: "Cleans and standardizes raw homebuilder sales data from Snowflake RAW layer."
+    columns:
+      - name: CONTRACT_ID
+        description: "Unique identifier for each contract"
+
+      - name: CONTRACT_PRICE
+        description: "Final contract price after upgrades and incentives"
+
+      - name: CONTRACT_DATE
+        description: "Date the contract was signed"
+
+  - name: dim_region
+    description: "Aggregated regional performance metrics for executive reporting"
+
+  - name: dim_consultant
+    description: "Sales consultant performance metrics"
+
+  - name: monthly_trends
+    description: "Monthly aggregated sales trends for forecasting and reporting"
+
+  - name: kpi_summary
+    description: "Executive KPI summary table for dashboards and AI analysis"

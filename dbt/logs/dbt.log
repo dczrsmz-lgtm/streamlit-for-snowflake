@@ -1,0 +1,1564 @@
+[0m23:48:35.487368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F654E7AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F654E7850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F654EF490>]}
+
+
+============================== 23:48:35.497440 | c521fe74-3d11-44ed-9815-9dbb3d27ad8f ==============================
+[0m23:48:35.497440 [info ] [MainThread]: Running with dbt=1.11.8
+[0m23:48:35.498452 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:48:35.524511 [info ] [MainThread]: dbt version: 1.11.8
+[0m23:48:35.527024 [info ] [MainThread]: python version: 3.11.5
+[0m23:48:35.531154 [info ] [MainThread]: python path: C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\venv\Scripts\python.exe
+[0m23:48:35.534139 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m23:48:35.537142 [info ] [MainThread]: Using profiles dir at C:\Users\dczrs\.dbt
+[0m23:48:35.540486 [info ] [MainThread]: Using profiles.yml file at C:\Users\dczrs\.dbt\profiles.yml
+[0m23:48:35.541462 [info ] [MainThread]: Using dbt_project.yml file at C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml
+[0m23:48:35.542461 [info ] [MainThread]: Configuration:
+[0m23:48:35.545473 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m23:48:35.549020 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:48:35.552043 [info ] [MainThread]: Required dependencies:
+[0m23:48:35.555041 [debug] [MainThread]: Executing "git --help"
+[0m23:48:35.658930 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:48:35.661947 [debug] [MainThread]: STDERR: "b''"
+[0m23:48:35.662933 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:48:35.663931 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m23:48:35.664927 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:48:35.665927 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\dczrs\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:48:35.665927 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml> not found
+
+[0m23:48:35.669463 [debug] [MainThread]: Command `dbt debug` failed at 23:48:35.669463 after 0.28 seconds
+[0m23:48:35.670459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F65501950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F65503F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028F65487F90>]}
+[0m23:48:35.672472 [debug] [MainThread]: Flushing usage events
+[0m23:48:36.663875 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:14.090481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276715BCA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276715BFA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276715BFB90>]}
+
+
+============================== 00:07:14.099577 | 0de490e6-be06-4b94-8254-c0b2331dc0c8 ==============================
+[0m00:07:14.099577 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:07:14.101575 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:07:14.144886 [info ] [MainThread]: dbt version: 1.11.8
+[0m00:07:14.145893 [info ] [MainThread]: python version: 3.11.5
+[0m00:07:14.146829 [info ] [MainThread]: python path: C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\venv\Scripts\python.exe
+[0m00:07:14.149880 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m00:07:16.803932 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:07:16.804939 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:07:16.806873 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:07:16.872763 [info ] [MainThread]: Using profiles dir at C:\Users\dczrs\.dbt
+[0m00:07:16.873276 [info ] [MainThread]: Using profiles.yml file at C:\Users\dczrs\.dbt\profiles.yml
+[0m00:07:16.874506 [info ] [MainThread]: Using dbt_project.yml file at C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml
+[0m00:07:16.875024 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:07:16.877118 [debug] [MainThread]: Command `dbt debug` failed at 00:07:16.877118 after 2.91 seconds
+[0m00:07:16.878166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027672607A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027672607F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002760ED58910>]}
+[0m00:07:16.879048 [debug] [MainThread]: Flushing usage events
+[0m00:07:17.742816 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:08:34.364890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AAE653A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AAE6C00D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AAE652810>]}
+
+
+============================== 00:08:34.371427 | 546919da-0204-4be2-8c0e-0f73ff656b58 ==============================
+[0m00:08:34.371427 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:08:34.373422 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:08:34.374433 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m00:08:34.376473 [debug] [MainThread]: Command `dbt run` failed at 00:08:34.376473 after 0.11 seconds
+[0m00:08:34.377486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AA6814150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AA6814190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017AAD61F1D0>]}
+[0m00:08:34.377486 [debug] [MainThread]: Flushing usage events
+[0m00:08:35.157836 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:10:51.881249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021087400950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021087451250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210874005D0>]}
+
+
+============================== 00:10:51.893948 | 0354c370-b125-429a-99cd-ee14e71cdbf1 ==============================
+[0m00:10:51.893948 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:10:51.896803 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\projects\\VsCodeWorkSpace\\streamlit-for-snowflake\\dbt\\logs'}
+[0m00:10:52.777396 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:10:52.778418 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:10:52.779415 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:10:52.961465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A00C1090>]}
+[0m00:10:53.011361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210853A63D0>]}
+[0m00:10:53.012359 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m00:10:53.345904 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m00:10:53.345904 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:10:53.347500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A2C03810>]}
+[0m00:10:54.176151 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.rhodes_analytics.ai
+[0m00:10:54.180177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A28E6410>]}
+[0m00:10:54.242584 [debug] [MainThread]: Wrote artifact WritableManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\manifest.json
+[0m00:10:54.245975 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\semantic_manifest.json
+[0m00:10:54.252925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A2ECB950>]}
+[0m00:10:54.253907 [info ] [MainThread]: Found 9 models, 523 macros
+[0m00:10:54.254451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A2E75410>]}
+[0m00:10:54.255469 [info ] [MainThread]: 
+[0m00:10:54.256466 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m00:10:54.256466 [info ] [MainThread]: 
+[0m00:10:54.257529 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:10:54.261468 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:10:54.277391 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:10:54.280299 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:10:54.281268 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:10:54.282322 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:10:54.512640 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:10:54.512640 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:10:54.513711 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:10:54.513711 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:10:54.514300 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:10:54.514300 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:10:54.514300 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:10:54.515375 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:10:54.515375 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:10:54.516326 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:54.516326 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:10:54.516326 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:54.517372 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:54.517372 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:54.517372 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.596224 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.080 seconds
+[0m00:10:55.657871 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.140 seconds
+[0m00:10:55.659882 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.144 seconds
+[0m00:10:55.661929 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.145 seconds
+[0m00:10:55.670867 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.153 seconds
+[0m00:10:55.678460 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_ml)
+[0m00:10:55.679407 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_staging)
+[0m00:10:55.680408 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_marts)
+[0m00:10:55.684043 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_ml"
+"
+[0m00:10:55.684043 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_kpi)
+[0m00:10:55.686195 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_staging"
+"
+[0m00:10:55.687109 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_marts"
+"
+[0m00:10:55.696373 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_ml"
+[0m00:10:55.698511 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_kpi"
+"
+[0m00:10:55.703642 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_staging"
+[0m00:10:55.707428 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_marts"
+[0m00:10:55.709363 [debug] [ThreadPool]: On create_db_Real_Estate_staging_ml: create schema if not exists db_Real_Estate.staging_ml
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_ml"} */
+[0m00:10:55.714601 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_kpi"
+[0m00:10:55.715619 [debug] [ThreadPool]: On create_db_Real_Estate_staging_staging: create schema if not exists db_Real_Estate.staging_staging
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_staging"} */
+[0m00:10:55.717042 [debug] [ThreadPool]: On create_db_Real_Estate_staging_marts: create schema if not exists db_Real_Estate.staging_marts
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_marts"} */
+[0m00:10:55.719092 [debug] [ThreadPool]: On create_db_Real_Estate_staging_kpi: create schema if not exists db_Real_Estate.staging_kpi
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_kpi"} */
+[0m00:10:55.882256 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.160 seconds
+[0m00:10:55.895200 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.177 seconds
+[0m00:10:55.923705 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.198 seconds
+[0m00:10:55.931521 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m00:10:55.937577 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_ml'
+[0m00:10:55.940666 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_staging'
+[0m00:10:55.966331 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_ml"
+[0m00:10:55.967401 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging'
+[0m00:10:55.972328 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_staging"
+[0m00:10:55.972328 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_marts'
+[0m00:10:55.974504 [debug] [ThreadPool]: On list_db_Real_Estate_staging_ml: show objects in db_Real_Estate.staging_ml
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_ml"} */;
+[0m00:10:55.975588 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_kpi'
+[0m00:10:55.978867 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging"
+[0m00:10:55.979870 [debug] [ThreadPool]: On list_db_Real_Estate_staging_staging: show objects in db_Real_Estate.staging_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_staging"} */;
+[0m00:10:55.983380 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_marts"
+[0m00:10:55.983380 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.986811 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_kpi"
+[0m00:10:55.986811 [debug] [ThreadPool]: On list_db_Real_Estate_staging: show objects in db_Real_Estate.staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging"} */;
+[0m00:10:55.987767 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.987767 [debug] [ThreadPool]: On list_db_Real_Estate_staging_marts: show objects in db_Real_Estate.staging_marts
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_marts"} */;
+[0m00:10:55.989787 [debug] [ThreadPool]: On list_db_Real_Estate_staging_kpi: show objects in db_Real_Estate.staging_kpi
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_kpi"} */;
+[0m00:10:55.990780 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.992818 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.994354 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:56.679666 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.689 seconds
+[0m00:10:56.689532 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.705 seconds
+[0m00:10:56.883371 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.889 seconds
+[0m00:10:56.885619 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.898 seconds
+[0m00:10:56.892247 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.900 seconds
+[0m00:10:56.896511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021082B502D0>]}
+[0m00:10:56.918197 [debug] [Thread-2 (]: Began running node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:10:56.919244 [debug] [Thread-3 (]: Began running node model.rhodes_analytics.stg_regional_lookup
+[0m00:10:56.920245 [info ] [Thread-2 (]: 1 of 9 START sql view model staging_staging.stg_homebuilder_sales .............. [RUN]
+[0m00:10:56.922161 [info ] [Thread-3 (]: 2 of 9 START sql view model staging_staging.stg_regional_lookup ................ [RUN]
+[0m00:10:56.924243 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.rhodes_analytics.stg_homebuilder_sales'
+[0m00:10:56.926349 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.rhodes_analytics.stg_regional_lookup'
+[0m00:10:56.927397 [debug] [Thread-2 (]: Began compiling node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:10:56.929309 [debug] [Thread-3 (]: Began compiling node model.rhodes_analytics.stg_regional_lookup
+[0m00:10:56.948270 [debug] [Thread-2 (]: Writing injected SQL for node "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:10:56.953385 [debug] [Thread-3 (]: Writing injected SQL for node "model.rhodes_analytics.stg_regional_lookup"
+[0m00:10:56.955995 [debug] [Thread-2 (]: Began executing node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:10:56.978579 [debug] [Thread-2 (]: Writing runtime sql for node "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:10:56.979568 [debug] [Thread-3 (]: Began executing node model.rhodes_analytics.stg_regional_lookup
+[0m00:10:56.981585 [debug] [Thread-3 (]: Writing runtime sql for node "model.rhodes_analytics.stg_regional_lookup"
+[0m00:10:56.985107 [debug] [Thread-3 (]: Using snowflake connection "model.rhodes_analytics.stg_regional_lookup"
+[0m00:10:56.987094 [debug] [Thread-2 (]: Using snowflake connection "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:10:56.987094 [debug] [Thread-3 (]: On model.rhodes_analytics.stg_regional_lookup: create or replace   view db_Real_Estate.staging_staging.stg_regional_lookup
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: stg_regional_lookup
+-- Layer: Staging
+-- Purpose: Clean regional dimension for slicing & KPI joins
+-- =========================================================
+
+select
+
+    cast(REGION as varchar) as REGION,
+    cast(REGIONAL_MANAGER as varchar) as REGIONAL_MANAGER,
+
+    -- Targets (used for performance slicing)
+    cast(SALES_TARGET_UNITS as integer) as SALES_TARGET_UNITS,
+    cast(MARGIN_TARGET_PCT as number(5,2)) as MARGIN_TARGET_PCT
+
+from DB_REAL_ESTATE.RAW.REGIONAL_MANAGER_LOOKUP
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.stg_regional_lookup"} */;
+[0m00:10:56.988086 [debug] [Thread-2 (]: On model.rhodes_analytics.stg_homebuilder_sales: create or replace   view db_Real_Estate.staging_staging.stg_homebuilder_sales
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: stg_homebuilder_sales
+-- Layer: Staging
+-- Purpose: Clean and standardize raw sales data
+-- =========================================================
+
+select
+
+    -- Primary Identifiers
+    cast(CONTRACT_ID as varchar) as CONTRACT_ID,
+
+    -- Location Attributes
+    cast(COMMUNITY as varchar) as COMMUNITY,
+    cast(CITY as varchar) as CITY,
+    cast(REGION as varchar) as REGION,
+
+    -- Product Attributes
+    cast(PLAN_NAME as varchar) as PLAN_NAME,
+    cast(SQFT as integer) as SQFT,
+    cast(BEDROOMS as integer) as BEDROOMS,
+    cast(BATHROOMS as number(3,1)) as BATHROOMS,
+
+    -- Financials
+    cast(BASE_PRICE as number(12,2)) as BASE_PRICE,
+    cast(UPGRADE_AMOUNT as number(12,2)) as UPGRADE_AMOUNT,
+    cast(INCENTIVE_AMOUNT as number(12,2)) as INCENTIVE_AMOUNT,
+    cast(CONTRACT_PRICE as number(12,2)) as CONTRACT_PRICE,
+    cast(AGENT_COMMISSION as number(12,2)) as AGENT_COMMISSION,
+
+    -- Dates
+    cast(CONTRACT_DATE as date) as CONTRACT_DATE,
+    cast(CLOSE_DATE as date) as CLOSE_DATE,
+
+    -- Performance Metrics
+    cast(DAYS_TO_CLOSE as integer) as DAYS_TO_CLOSE,
+
+    -- Status / Business Attributes
+    cast(STATUS as varchar) as STATUS,
+    cast(BUYER_SOURCE as varchar) as BUYER_SOURCE,
+    cast(LOAN_TYPE as varchar) as LOAN_TYPE,
+    cast(SALES_CONSULTANT as varchar) as SALES_CONSULTANT
+
+from DB_REAL_ESTATE.RAW.HOMEBUILDER_SALES
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.stg_homebuilder_sales"} */;
+[0m00:10:56.988086 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:10:56.989095 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:10:57.999974 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.011 seconds
+[0m00:10:58.047370 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.059 seconds
+[0m00:10:58.048447 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A3053C90>]}
+[0m00:10:58.050383 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A29EDE10>]}
+[0m00:10:58.051956 [info ] [Thread-3 (]: 2 of 9 OK created sql view model staging_staging.stg_regional_lookup ........... [[32mSUCCESS 1[0m in 1.12s]
+[0m00:10:58.054100 [debug] [Thread-3 (]: Finished running node model.rhodes_analytics.stg_regional_lookup
+[0m00:10:58.051956 [info ] [Thread-2 (]: 1 of 9 OK created sql view model staging_staging.stg_homebuilder_sales ......... [[32mSUCCESS 1[0m in 1.13s]
+[0m00:10:58.055126 [debug] [Thread-2 (]: Finished running node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:10:58.059113 [debug] [Thread-5 (]: Began running node model.rhodes_analytics.ai_kpi_context
+[0m00:10:58.060383 [debug] [Thread-6 (]: Began running node model.rhodes_analytics.dim_consultant
+[0m00:10:58.060383 [debug] [Thread-7 (]: Began running node model.rhodes_analytics.dim_region
+[0m00:10:58.061405 [debug] [Thread-8 (]: Began running node model.rhodes_analytics.fct_sales
+[0m00:10:58.061405 [debug] [Thread-9 (]: Began running node model.rhodes_analytics.kpi_summary
+[0m00:10:58.062397 [debug] [Thread-10 ]: Began running node model.rhodes_analytics.monthly_trends
+[0m00:10:58.063379 [debug] [Thread-11 ]: Began running node model.rhodes_analytics.sales_forecast
+[0m00:10:58.062397 [info ] [Thread-5 (]: 3 of 9 START sql view model staging.ai_kpi_context ............................. [RUN]
+[0m00:10:58.063957 [info ] [Thread-6 (]: 4 of 9 START sql table model staging_marts.dim_consultant ...................... [RUN]
+[0m00:10:58.064525 [info ] [Thread-7 (]: 5 of 9 START sql table model staging_marts.dim_region .......................... [RUN]
+[0m00:10:58.066543 [info ] [Thread-8 (]: 6 of 9 START sql table model staging_marts.fct_sales ........................... [RUN]
+[0m00:10:58.070601 [info ] [Thread-9 (]: 7 of 9 START sql table model staging_kpi.kpi_summary ........................... [RUN]
+[0m00:10:58.072586 [info ] [Thread-10 ]: 8 of 9 START sql table model staging_marts.monthly_trends ...................... [RUN]
+[0m00:10:58.076122 [info ] [Thread-11 ]: 9 of 9 START sql table model staging_ml.sales_forecast ......................... [RUN]
+[0m00:10:58.080195 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.rhodes_analytics.ai_kpi_context'
+[0m00:10:58.084367 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.rhodes_analytics.dim_consultant'
+[0m00:10:58.086931 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.rhodes_analytics.dim_region'
+[0m00:10:58.090953 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.rhodes_analytics.fct_sales'
+[0m00:10:58.094536 [debug] [Thread-9 (]: Acquiring new snowflake connection 'model.rhodes_analytics.kpi_summary'
+[0m00:10:58.097112 [debug] [Thread-10 ]: Acquiring new snowflake connection 'model.rhodes_analytics.monthly_trends'
+[0m00:10:58.098100 [debug] [Thread-11 ]: Acquiring new snowflake connection 'model.rhodes_analytics.sales_forecast'
+[0m00:10:58.099125 [debug] [Thread-5 (]: Began compiling node model.rhodes_analytics.ai_kpi_context
+[0m00:10:58.100097 [debug] [Thread-6 (]: Began compiling node model.rhodes_analytics.dim_consultant
+[0m00:10:58.102062 [debug] [Thread-7 (]: Began compiling node model.rhodes_analytics.dim_region
+[0m00:10:58.105184 [debug] [Thread-8 (]: Began compiling node model.rhodes_analytics.fct_sales
+[0m00:10:58.107206 [debug] [Thread-9 (]: Began compiling node model.rhodes_analytics.kpi_summary
+[0m00:10:58.110206 [debug] [Thread-10 ]: Began compiling node model.rhodes_analytics.monthly_trends
+[0m00:10:58.112248 [debug] [Thread-11 ]: Began compiling node model.rhodes_analytics.sales_forecast
+[0m00:10:58.119527 [debug] [Thread-5 (]: Writing injected SQL for node "model.rhodes_analytics.ai_kpi_context"
+[0m00:10:58.121526 [debug] [Thread-6 (]: Writing injected SQL for node "model.rhodes_analytics.dim_consultant"
+[0m00:10:58.126769 [debug] [Thread-7 (]: Writing injected SQL for node "model.rhodes_analytics.dim_region"
+[0m00:10:58.130711 [debug] [Thread-8 (]: Writing injected SQL for node "model.rhodes_analytics.fct_sales"
+[0m00:10:58.132754 [debug] [Thread-9 (]: Writing injected SQL for node "model.rhodes_analytics.kpi_summary"
+[0m00:10:58.136325 [debug] [Thread-10 ]: Writing injected SQL for node "model.rhodes_analytics.monthly_trends"
+[0m00:10:58.139406 [debug] [Thread-11 ]: Writing injected SQL for node "model.rhodes_analytics.sales_forecast"
+[0m00:10:58.141670 [debug] [Thread-5 (]: Began executing node model.rhodes_analytics.ai_kpi_context
+[0m00:10:58.147000 [debug] [Thread-5 (]: Writing runtime sql for node "model.rhodes_analytics.ai_kpi_context"
+[0m00:10:58.147936 [debug] [Thread-6 (]: Began executing node model.rhodes_analytics.dim_consultant
+[0m00:10:58.147936 [debug] [Thread-7 (]: Began executing node model.rhodes_analytics.dim_region
+[0m00:10:58.148991 [debug] [Thread-8 (]: Began executing node model.rhodes_analytics.fct_sales
+[0m00:10:58.167430 [debug] [Thread-6 (]: Writing runtime sql for node "model.rhodes_analytics.dim_consultant"
+[0m00:10:58.168458 [debug] [Thread-9 (]: Began executing node model.rhodes_analytics.kpi_summary
+[0m00:10:58.171490 [debug] [Thread-7 (]: Writing runtime sql for node "model.rhodes_analytics.dim_region"
+[0m00:10:58.172508 [debug] [Thread-5 (]: Using snowflake connection "model.rhodes_analytics.ai_kpi_context"
+[0m00:10:58.172508 [debug] [Thread-11 ]: Began executing node model.rhodes_analytics.sales_forecast
+[0m00:10:58.172508 [debug] [Thread-10 ]: Began executing node model.rhodes_analytics.monthly_trends
+[0m00:10:58.175588 [debug] [Thread-8 (]: Writing runtime sql for node "model.rhodes_analytics.fct_sales"
+[0m00:10:58.178650 [debug] [Thread-9 (]: Writing runtime sql for node "model.rhodes_analytics.kpi_summary"
+[0m00:10:58.179596 [debug] [Thread-5 (]: On model.rhodes_analytics.ai_kpi_context: create or replace   view db_Real_Estate.staging.ai_kpi_context
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: ai_kpi_context
+-- Layer: AI / Semantic + Narrative
+-- Purpose: Business-explainable AI grounding layer
+-- =========================================================
+
+select
+
+    'TOTAL_SALES' as KPI_NAME,
+
+    'Total revenue generated from all closed homebuilder contracts' as BUSINESS_DEFINITION,
+
+    sum(CONTRACT_PRICE) as CURRENT_VALUE,
+
+    'Primary revenue driver for company performance' as BUSINESS_IMPORTANCE,
+
+    case
+        when sum(CONTRACT_PRICE) > 10000000 then 'Strong performance'
+        when sum(CONTRACT_PRICE) between 5000000 and 10000000 then 'Moderate performance'
+        else 'Below expectations'
+    end as PERFORMANCE_STATE
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+
+union all
+
+select
+
+    'AVG_DAYS_TO_CLOSE',
+    'Average number of days required to close a home sale',
+    avg(DAYS_TO_CLOSE),
+    'Operational efficiency indicator',
+    case
+        when avg(DAYS_TO_CLOSE) < 30 then 'Efficient'
+        when avg(DAYS_TO_CLOSE) between 30 and 60 then 'Normal'
+        else 'Slow cycle'
+    end
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+
+union all
+
+select
+
+    'AVG_CONTRACT_PRICE',
+    'Average selling price per home contract across all regions',
+    avg(CONTRACT_PRICE),
+    'Measures pricing strength and product mix',
+    case
+        when avg(CONTRACT_PRICE) > 500000 then 'High value mix'
+        when avg(CONTRACT_PRICE) between 300000 and 500000 then 'Mid-market mix'
+        else 'Low value mix'
+    end
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.ai_kpi_context"} */;
+[0m00:10:58.179596 [debug] [Thread-6 (]: Using snowflake connection "model.rhodes_analytics.dim_consultant"
+[0m00:10:58.183644 [debug] [Thread-11 ]: Writing runtime sql for node "model.rhodes_analytics.sales_forecast"
+[0m00:10:58.184215 [debug] [Thread-7 (]: Using snowflake connection "model.rhodes_analytics.dim_region"
+[0m00:10:58.187261 [debug] [Thread-10 ]: Writing runtime sql for node "model.rhodes_analytics.monthly_trends"
+[0m00:10:58.188319 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:10:58.189231 [debug] [Thread-6 (]: On model.rhodes_analytics.dim_consultant: create or replace transient table db_Real_Estate.staging_marts.dim_consultant
+    
+    
+    
+    as (-- =========================================================
+-- Model: dim_consultant
+-- Layer: Mart (Dimension)
+-- Purpose: Sales consultant performance tracking
+-- =========================================================
+
+select
+
+    SALES_CONSULTANT,
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE,
+
+    avg(DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+
+group by SALES_CONSULTANT
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.dim_consultant"} */;
+[0m00:10:58.190233 [debug] [Thread-8 (]: Using snowflake connection "model.rhodes_analytics.fct_sales"
+[0m00:10:58.191618 [debug] [Thread-7 (]: On model.rhodes_analytics.dim_region: create or replace transient table db_Real_Estate.staging_marts.dim_region
+    
+    
+    
+    as (-- =========================================================
+-- Model: dim_region
+-- Layer: Mart (Dimension)
+-- Purpose: Enables slicing, targeting, and performance comparison
+-- =========================================================
+
+with sales as (
+    select *
+    from db_Real_Estate.staging_staging.stg_homebuilder_sales
+),
+
+region_lookup as (
+    select *
+    from db_Real_Estate.staging_staging.stg_regional_lookup
+)
+
+select
+
+    -- =========================
+    -- DIMENSION KEY
+    -- =========================
+    s.REGION,
+
+    -- =========================
+    -- CONTEXT (slice/dice fields)
+    -- =========================
+    r.REGIONAL_MANAGER,
+
+    -- =========================
+    -- ACTUAL PERFORMANCE
+    -- =========================
+    count(s.CONTRACT_ID) as TOTAL_CONTRACTS,
+    sum(s.CONTRACT_PRICE) as TOTAL_SALES,
+    avg(s.CONTRACT_PRICE) as AVG_SALES_PRICE,
+    avg(s.DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE,
+
+    -- =========================
+    -- TARGETS (FROM LOOKUP)
+    -- =========================
+    max(r.SALES_TARGET_UNITS) as SALES_TARGET_UNITS,
+    max(r.MARGIN_TARGET_PCT) as MARGIN_TARGET_PCT,
+
+    -- =========================
+    -- PERFORMANCE GAP (VERY IMPORTANT)
+    -- =========================
+    count(s.CONTRACT_ID) - max(r.SALES_TARGET_UNITS) as CONTRACT_GAP
+
+from sales s
+
+left join region_lookup r
+    on s.REGION = r.REGION
+
+group by
+    s.REGION,
+    r.REGIONAL_MANAGER
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.dim_region"} */;
+[0m00:10:58.192625 [debug] [Thread-9 (]: Using snowflake connection "model.rhodes_analytics.kpi_summary"
+[0m00:10:58.193681 [debug] [Thread-11 ]: Using snowflake connection "model.rhodes_analytics.sales_forecast"
+[0m00:10:58.195361 [debug] [Thread-10 ]: Using snowflake connection "model.rhodes_analytics.monthly_trends"
+[0m00:10:58.196444 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:10:58.196444 [debug] [Thread-8 (]: On model.rhodes_analytics.fct_sales: create or replace transient table db_Real_Estate.staging_marts.fct_sales
+    
+    
+    
+    as (-- =========================================================
+-- Model: fct_sales
+-- Layer: Fact
+-- Purpose: Central sales fact table for analytics
+-- =========================================================
+
+select
+
+    CONTRACT_ID,
+    REGION,
+    COMMUNITY,
+    SALES_CONSULTANT,
+    CONTRACT_DATE,
+    CLOSE_DATE,
+    STATUS,
+
+    CONTRACT_PRICE,
+    DAYS_TO_CLOSE,
+
+    -- Derived fields for analysis
+    date_trunc('month', CONTRACT_DATE) as CONTRACT_MONTH,
+
+    CONTRACT_PRICE - BASE_PRICE as NET_UPLIFT
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.fct_sales"} */;
+[0m00:10:58.197432 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m00:10:58.198434 [debug] [Thread-9 (]: On model.rhodes_analytics.kpi_summary: create or replace transient table db_Real_Estate.staging_kpi.kpi_summary
+    
+    
+    
+    as (-- =========================================================
+-- Model: kpi_summary
+-- Layer: KPI Mart
+-- Purpose: Executive-level aggregated KPIs
+-- =========================================================
+
+select
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE,
+
+    avg(DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE,
+
+    sum(AGENT_COMMISSION) as TOTAL_COMMISSION
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.kpi_summary"} */;
+[0m00:10:58.198434 [debug] [Thread-11 ]: On model.rhodes_analytics.sales_forecast: create or replace transient table db_Real_Estate.staging_ml.sales_forecast
+    
+    
+    
+    as (-- =========================================================
+-- Model: sales_forecast
+-- Layer: ML / Analytics
+-- Purpose: Simple time-series forecast baseline for sales
+-- =========================================================
+
+with monthly as (
+
+    select
+        date_trunc('month', CONTRACT_DATE) as MONTH,
+        sum(CONTRACT_PRICE) as TOTAL_SALES
+    from db_Real_Estate.staging_staging.stg_homebuilder_sales
+    group by 1
+),
+
+features as (
+
+    select
+        MONTH,
+        TOTAL_SALES,
+        row_number() over (order by MONTH) as TIME_INDEX
+    from monthly
+)
+
+select
+
+    MONTH,
+    TOTAL_SALES,
+
+    -- Simple linear trend projection (baseline forecast)
+    avg(TOTAL_SALES) over (
+        order by TIME_INDEX
+        rows between 2 preceding and 0 preceding
+    ) as MOVING_AVG_3M,
+
+    -- Trend indicator
+    TOTAL_SALES -
+    lag(TOTAL_SALES) over (order by MONTH) as MOM_CHANGE
+
+from features
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.sales_forecast"} */;
+[0m00:10:58.199374 [debug] [Thread-10 ]: On model.rhodes_analytics.monthly_trends: create or replace transient table db_Real_Estate.staging_marts.monthly_trends
+    
+    
+    
+    as (-- =========================================================
+-- Model: monthly_trends
+-- Layer: Mart
+-- Purpose: Time-series sales performance
+-- =========================================================
+
+select
+
+    date_trunc('month', CONTRACT_DATE) as MONTH,
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE
+
+from db_Real_Estate.staging_staging.stg_homebuilder_sales
+
+group by 1
+order by 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.monthly_trends"} */;
+[0m00:10:58.200403 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:10:58.203428 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m00:10:58.205622 [debug] [Thread-11 ]: Opening a new connection, currently in state init
+[0m00:10:58.206629 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m00:10:59.139183 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.951 seconds
+[0m00:10:59.143945 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A498C190>]}
+[0m00:10:59.145704 [info ] [Thread-5 (]: 3 of 9 OK created sql view model staging.ai_kpi_context ........................ [[32mSUCCESS 1[0m in 1.06s]
+[0m00:10:59.147659 [debug] [Thread-5 (]: Finished running node model.rhodes_analytics.ai_kpi_context
+[0m00:11:00.036431 [debug] [Thread-10 ]: SQL status: SUCCESS 22 in 1.829 seconds
+[0m00:11:00.041427 [debug] [Thread-6 (]: SQL status: SUCCESS 6 in 1.844 seconds
+[0m00:11:00.043506 [debug] [Thread-8 (]: SQL status: SUCCESS 600 in 1.843 seconds
+[0m00:11:00.047977 [debug] [Thread-10 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A4A26210>]}
+[0m00:11:00.049898 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 1.847 seconds
+[0m00:11:00.053621 [debug] [Thread-11 ]: SQL status: SUCCESS 22 in 1.847 seconds
+[0m00:11:00.058338 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A4999E10>]}
+[0m00:11:00.062334 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A35BF290>]}
+[0m00:11:00.063937 [info ] [Thread-10 ]: 8 of 9 OK created sql table model staging_marts.monthly_trends ................. [[32mSUCCESS 22[0m in 1.95s]
+[0m00:11:00.068771 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A2F29890>]}
+[0m00:11:00.071814 [debug] [Thread-11 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A4A264D0>]}
+[0m00:11:00.072818 [info ] [Thread-6 (]: 4 of 9 OK created sql table model staging_marts.dim_consultant ................. [[32mSUCCESS 6[0m in 1.98s]
+[0m00:11:00.075321 [info ] [Thread-8 (]: 6 of 9 OK created sql table model staging_marts.fct_sales ...................... [[32mSUCCESS 600[0m in 1.97s]
+[0m00:11:00.077325 [debug] [Thread-10 ]: Finished running node model.rhodes_analytics.monthly_trends
+[0m00:11:00.079327 [info ] [Thread-9 (]: 7 of 9 OK created sql table model staging_kpi.kpi_summary ...................... [[32mSUCCESS 1[0m in 1.97s]
+[0m00:11:00.081375 [info ] [Thread-11 ]: 9 of 9 OK created sql table model staging_ml.sales_forecast .................... [[32mSUCCESS 22[0m in 1.97s]
+[0m00:11:00.084405 [debug] [Thread-6 (]: Finished running node model.rhodes_analytics.dim_consultant
+[0m00:11:00.087813 [debug] [Thread-8 (]: Finished running node model.rhodes_analytics.fct_sales
+[0m00:11:00.090816 [debug] [Thread-9 (]: Finished running node model.rhodes_analytics.kpi_summary
+[0m00:11:00.094559 [debug] [Thread-11 ]: Finished running node model.rhodes_analytics.sales_forecast
+[0m00:11:00.106283 [debug] [Thread-7 (]: SQL status: SUCCESS 3 in 1.909 seconds
+[0m00:11:00.111432 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0354c370-b125-429a-99cd-ee14e71cdbf1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210A4A020D0>]}
+[0m00:11:00.112442 [info ] [Thread-7 (]: 5 of 9 OK created sql table model staging_marts.dim_region ..................... [[32mSUCCESS 3[0m in 2.03s]
+[0m00:11:00.114031 [debug] [Thread-7 (]: Finished running node model.rhodes_analytics.dim_region
+[0m00:11:00.119258 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:11:00.120251 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_marts' was left open.
+[0m00:11:00.121253 [debug] [MainThread]: On create_db_Real_Estate_staging_marts: Close
+[0m00:11:00.306821 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_ml' was left open.
+[0m00:11:00.308891 [debug] [MainThread]: On create_db_Real_Estate_staging_ml: Close
+[0m00:11:00.488498 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_kpi' was left open.
+[0m00:11:00.489603 [debug] [MainThread]: On create_db_Real_Estate_staging_kpi: Close
+[0m00:11:00.642426 [debug] [MainThread]: Connection 'list_db_Real_Estate' was left open.
+[0m00:11:00.644026 [debug] [MainThread]: On list_db_Real_Estate: Close
+[0m00:11:00.818613 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_staging' was left open.
+[0m00:11:00.819618 [debug] [MainThread]: On create_db_Real_Estate_staging_staging: Close
+[0m00:11:00.983610 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_ml' was left open.
+[0m00:11:00.985252 [debug] [MainThread]: On list_db_Real_Estate_staging_ml: Close
+[0m00:11:01.177175 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_staging' was left open.
+[0m00:11:01.178171 [debug] [MainThread]: On list_db_Real_Estate_staging_staging: Close
+[0m00:11:01.438967 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging' was left open.
+[0m00:11:01.439975 [debug] [MainThread]: On list_db_Real_Estate_staging: Close
+[0m00:11:01.609949 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_marts' was left open.
+[0m00:11:01.610941 [debug] [MainThread]: On list_db_Real_Estate_staging_marts: Close
+[0m00:11:01.810253 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_kpi' was left open.
+[0m00:11:01.811253 [debug] [MainThread]: On list_db_Real_Estate_staging_kpi: Close
+[0m00:11:02.001276 [debug] [MainThread]: Connection 'model.rhodes_analytics.stg_homebuilder_sales' was left open.
+[0m00:11:02.002351 [debug] [MainThread]: On model.rhodes_analytics.stg_homebuilder_sales: Close
+[0m00:11:02.201189 [debug] [MainThread]: Connection 'model.rhodes_analytics.stg_regional_lookup' was left open.
+[0m00:11:02.202193 [debug] [MainThread]: On model.rhodes_analytics.stg_regional_lookup: Close
+[0m00:11:02.371205 [debug] [MainThread]: Connection 'model.rhodes_analytics.ai_kpi_context' was left open.
+[0m00:11:02.372167 [debug] [MainThread]: On model.rhodes_analytics.ai_kpi_context: Close
+[0m00:11:02.564596 [debug] [MainThread]: Connection 'model.rhodes_analytics.dim_consultant' was left open.
+[0m00:11:02.564596 [debug] [MainThread]: On model.rhodes_analytics.dim_consultant: Close
+[0m00:11:02.737954 [debug] [MainThread]: Connection 'model.rhodes_analytics.dim_region' was left open.
+[0m00:11:02.738964 [debug] [MainThread]: On model.rhodes_analytics.dim_region: Close
+[0m00:11:02.900566 [debug] [MainThread]: Connection 'model.rhodes_analytics.fct_sales' was left open.
+[0m00:11:02.901598 [debug] [MainThread]: On model.rhodes_analytics.fct_sales: Close
+[0m00:11:03.066398 [debug] [MainThread]: Connection 'model.rhodes_analytics.kpi_summary' was left open.
+[0m00:11:03.067456 [debug] [MainThread]: On model.rhodes_analytics.kpi_summary: Close
+[0m00:11:03.243700 [debug] [MainThread]: Connection 'model.rhodes_analytics.monthly_trends' was left open.
+[0m00:11:03.245272 [debug] [MainThread]: On model.rhodes_analytics.monthly_trends: Close
+[0m00:11:03.408498 [debug] [MainThread]: Connection 'model.rhodes_analytics.sales_forecast' was left open.
+[0m00:11:03.409434 [debug] [MainThread]: On model.rhodes_analytics.sales_forecast: Close
+[0m00:11:03.597561 [info ] [MainThread]: 
+[0m00:11:03.600378 [info ] [MainThread]: Finished running 6 table models, 3 view models in 0 hours 0 minutes and 9.34 seconds (9.34s).
+[0m00:11:03.606444 [debug] [MainThread]: Command end result
+[0m00:11:03.662090 [debug] [MainThread]: Wrote artifact WritableManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\manifest.json
+[0m00:11:03.665281 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\semantic_manifest.json
+[0m00:11:03.673791 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\run_results.json
+[0m00:11:03.675360 [info ] [MainThread]: 
+[0m00:11:03.676383 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:11:03.677380 [info ] [MainThread]: 
+[0m00:11:03.678379 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m00:11:03.680379 [debug] [MainThread]: Command `dbt run` succeeded at 00:11:03.680379 after 11.93 seconds
+[0m00:11:03.681378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FF88EDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002108745D990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002108745C3D0>]}
+[0m00:11:03.681378 [debug] [MainThread]: Flushing usage events
+[0m00:11:04.418317 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:15:59.271750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002379FF8F910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002379FD60050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002379FF7F850>]}
+
+
+============================== 00:15:59.275049 | 728ad597-9771-4d72-a9ff-c2868377f81f ==============================
+[0m00:15:59.275049 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:15:59.275049 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\projects\\VsCodeWorkSpace\\streamlit-for-snowflake\\dbt\\logs'}
+[0m00:15:59.299955 [info ] [MainThread]: dbt version: 1.11.8
+[0m00:15:59.302135 [info ] [MainThread]: python version: 3.11.5
+[0m00:15:59.302135 [info ] [MainThread]: python path: C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\venv\Scripts\python.exe
+[0m00:15:59.302135 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m00:15:59.933325 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:15:59.933883 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:15:59.934426 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:15:59.973829 [info ] [MainThread]: Using profiles dir at C:\Users\dczrs\.dbt
+[0m00:15:59.974349 [info ] [MainThread]: Using profiles.yml file at C:\Users\dczrs\.dbt\profiles.yml
+[0m00:15:59.975359 [info ] [MainThread]: Using dbt_project.yml file at C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml
+[0m00:16:00.055664 [info ] [MainThread]: Configuration:
+[0m00:16:00.055664 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:16:00.055664 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:16:00.055664 [info ] [MainThread]: Required dependencies:
+[0m00:16:00.055664 [debug] [MainThread]: Executing "git --help"
+[0m00:16:00.104127 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:16:00.105157 [debug] [MainThread]: STDERR: "b''"
+[0m00:16:00.105904 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:16:00.105904 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:16:00.106922 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:16:00.107922 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "rhodes_analytics", target "dev" invalid: 'schema' is a required property
+
+
+[0m00:16:00.109425 [debug] [MainThread]: Command `dbt debug` failed at 00:16:00.108232 after 0.93 seconds
+[0m00:16:00.109425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002379FD27B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237991542D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002379FD38410>]}
+[0m00:16:00.110412 [debug] [MainThread]: Flushing usage events
+[0m00:16:00.921698 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:16:49.810206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001643593FC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001643593E110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001643593F290>]}
+
+
+============================== 00:16:49.815593 | c0486c4b-95b9-4b9c-8669-8edfda43c2ee ==============================
+[0m00:16:49.815593 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:16:49.817108 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\projects\\VsCodeWorkSpace\\streamlit-for-snowflake\\dbt\\logs'}
+[0m00:16:49.834583 [info ] [MainThread]: dbt version: 1.11.8
+[0m00:16:49.834583 [info ] [MainThread]: python version: 3.11.5
+[0m00:16:49.834583 [info ] [MainThread]: python path: C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\venv\Scripts\python.exe
+[0m00:16:49.839411 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m00:16:50.509997 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:16:50.510981 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:16:50.511458 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:16:50.555699 [info ] [MainThread]: Using profiles dir at C:\Users\dczrs\.dbt
+[0m00:16:50.555699 [info ] [MainThread]: Using profiles.yml file at C:\Users\dczrs\.dbt\profiles.yml
+[0m00:16:50.555699 [info ] [MainThread]: Using dbt_project.yml file at C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml
+[0m00:16:50.555699 [info ] [MainThread]: adapter type: snowflake
+[0m00:16:50.555699 [info ] [MainThread]: adapter version: 1.11.4
+[0m00:16:50.639215 [info ] [MainThread]: Configuration:
+[0m00:16:50.640091 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:16:50.640091 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:16:50.641483 [info ] [MainThread]: Required dependencies:
+[0m00:16:50.642171 [debug] [MainThread]: Executing "git --help"
+[0m00:16:50.685391 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:16:50.685391 [debug] [MainThread]: STDERR: "b''"
+[0m00:16:50.685391 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:16:50.685391 [info ] [MainThread]: Connection:
+[0m00:16:50.685391 [info ] [MainThread]:   account: JPRAQQY-MJ44293
+[0m00:16:50.685391 [info ] [MainThread]:   user: DANIELCMEZA
+[0m00:16:50.685391 [info ] [MainThread]:   database: db_Real_Estate
+[0m00:16:50.685391 [info ] [MainThread]:   warehouse: dw_Real_Estate
+[0m00:16:50.685391 [info ] [MainThread]:   role: accountadmin
+[0m00:16:50.685391 [info ] [MainThread]:   schema: staging
+[0m00:16:50.685391 [info ] [MainThread]:   authenticator: None
+[0m00:16:50.685391 [info ] [MainThread]:   oauth_client_id: None
+[0m00:16:50.685391 [info ] [MainThread]:   query_tag: None
+[0m00:16:50.685391 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:16:50.685391 [info ] [MainThread]:   host: None
+[0m00:16:50.685391 [info ] [MainThread]:   port: None
+[0m00:16:50.692804 [info ] [MainThread]:   proxy_host: None
+[0m00:16:50.692804 [info ] [MainThread]:   proxy_port: None
+[0m00:16:50.694330 [info ] [MainThread]:   protocol: None
+[0m00:16:50.694330 [info ] [MainThread]:   connect_retries: 1
+[0m00:16:50.695337 [info ] [MainThread]:   connect_timeout: None
+[0m00:16:50.695337 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:16:50.696338 [info ] [MainThread]:   retry_all: False
+[0m00:16:50.696338 [info ] [MainThread]:   insecure_mode: False
+[0m00:16:50.697336 [info ] [MainThread]:   reuse_connections: True
+[0m00:16:50.697336 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:16:50.698336 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m00:16:50.698336 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m00:16:50.976711 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:16:51.019769 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:16:51.020751 [debug] [MainThread]: On debug: select 1 as id
+[0m00:16:51.020751 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:16:51.910769 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.890 seconds
+[0m00:16:51.911889 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:16:51.914516 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:16:51.917199 [debug] [MainThread]: Command `dbt debug` succeeded at 00:16:51.917199 after 2.18 seconds
+[0m00:16:51.918313 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:16:51.919278 [debug] [MainThread]: On debug: Close
+[0m00:16:52.091445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016452344CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164523449D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016452276850>]}
+[0m00:16:52.092566 [debug] [MainThread]: Flushing usage events
+[0m00:16:52.669397 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:18:05.236716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D9D1BF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D8CEF190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D8CEF0D0>]}
+
+
+============================== 00:18:05.242772 | e7fa0fa8-06a8-4c1f-8a6c-59bdd84410b7 ==============================
+[0m00:18:05.242772 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:18:05.244327 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\projects\\VsCodeWorkSpace\\streamlit-for-snowflake\\dbt\\logs'}
+[0m00:18:05.266194 [info ] [MainThread]: dbt version: 1.11.8
+[0m00:18:05.267819 [info ] [MainThread]: python version: 3.11.5
+[0m00:18:05.269011 [info ] [MainThread]: python path: C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\venv\Scripts\python.exe
+[0m00:18:05.269789 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m00:18:05.982173 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:18:05.982173 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:18:05.983774 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:18:06.024401 [info ] [MainThread]: Using profiles dir at C:\Users\dczrs\.dbt
+[0m00:18:06.028716 [info ] [MainThread]: Using profiles.yml file at C:\Users\dczrs\.dbt\profiles.yml
+[0m00:18:06.028716 [info ] [MainThread]: Using dbt_project.yml file at C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\dbt_project.yml
+[0m00:18:06.028716 [info ] [MainThread]: adapter type: snowflake
+[0m00:18:06.028716 [info ] [MainThread]: adapter version: 1.11.4
+[0m00:18:06.105469 [info ] [MainThread]: Configuration:
+[0m00:18:06.105469 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:18:06.105469 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:18:06.105469 [info ] [MainThread]: Required dependencies:
+[0m00:18:06.107890 [debug] [MainThread]: Executing "git --help"
+[0m00:18:06.150046 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:18:06.150046 [debug] [MainThread]: STDERR: "b''"
+[0m00:18:06.150046 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:18:06.151106 [info ] [MainThread]: Connection:
+[0m00:18:06.152018 [info ] [MainThread]:   account: JPRAQQY-MJ44293
+[0m00:18:06.152018 [info ] [MainThread]:   user: DANIELCMEZA
+[0m00:18:06.152018 [info ] [MainThread]:   database: db_Real_Estate
+[0m00:18:06.152018 [info ] [MainThread]:   warehouse: dw_Real_Estate
+[0m00:18:06.153524 [info ] [MainThread]:   role: accountadmin
+[0m00:18:06.154043 [info ] [MainThread]:   schema: staging
+[0m00:18:06.154043 [info ] [MainThread]:   authenticator: None
+[0m00:18:06.154043 [info ] [MainThread]:   oauth_client_id: None
+[0m00:18:06.155053 [info ] [MainThread]:   query_tag: None
+[0m00:18:06.155672 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:18:06.155672 [info ] [MainThread]:   host: None
+[0m00:18:06.156681 [info ] [MainThread]:   port: None
+[0m00:18:06.156681 [info ] [MainThread]:   proxy_host: None
+[0m00:18:06.157681 [info ] [MainThread]:   proxy_port: None
+[0m00:18:06.157681 [info ] [MainThread]:   protocol: None
+[0m00:18:06.158681 [info ] [MainThread]:   connect_retries: 1
+[0m00:18:06.158681 [info ] [MainThread]:   connect_timeout: None
+[0m00:18:06.159682 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:18:06.159682 [info ] [MainThread]:   retry_all: False
+[0m00:18:06.160680 [info ] [MainThread]:   insecure_mode: False
+[0m00:18:06.160680 [info ] [MainThread]:   reuse_connections: True
+[0m00:18:06.161681 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:18:06.161681 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m00:18:06.162880 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m00:18:06.435472 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:18:06.474325 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:18:06.474325 [debug] [MainThread]: On debug: select 1 as id
+[0m00:18:06.475377 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:18:07.356294 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.884 seconds
+[0m00:18:07.356294 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:18:07.364262 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:18:07.366930 [debug] [MainThread]: Command `dbt debug` succeeded at 00:18:07.365770 after 2.22 seconds
+[0m00:18:07.366930 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:18:07.367931 [debug] [MainThread]: On debug: Close
+[0m00:18:07.553924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D9CEC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D21CEDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191F284F650>]}
+[0m00:18:07.555912 [debug] [MainThread]: Flushing usage events
+[0m00:18:08.164014 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:18:11.738224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA333F0410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA333F0ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA333F1090>]}
+
+
+============================== 00:18:11.742405 | c329295d-b734-4bc2-86a6-511bc1f96dfe ==============================
+[0m00:18:11.742405 [info ] [MainThread]: Running with dbt=1.11.8
+[0m00:18:11.743399 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\dczrs\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\projects\\VsCodeWorkSpace\\streamlit-for-snowflake\\dbt\\logs'}
+[0m00:18:12.471692 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:18:12.473969 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:18:12.474579 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:18:12.641242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4C33C750>]}
+[0m00:18:12.686984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA31394E50>]}
+[0m00:18:12.687928 [info ] [MainThread]: Registered adapter: snowflake=1.11.4
+[0m00:18:12.978861 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m00:18:13.054583 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m00:18:13.054583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA313ACB90>]}
+[0m00:18:13.900223 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.rhodes_analytics.ai
+[0m00:18:13.905881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4EB98910>]}
+[0m00:18:14.086135 [debug] [MainThread]: Wrote artifact WritableManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\manifest.json
+[0m00:18:14.089374 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\semantic_manifest.json
+[0m00:18:14.095998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4EEB8A90>]}
+[0m00:18:14.095998 [info ] [MainThread]: Found 9 models, 523 macros
+[0m00:18:14.095998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F07C890>]}
+[0m00:18:14.095998 [info ] [MainThread]: 
+[0m00:18:14.095998 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m00:18:14.095998 [info ] [MainThread]: 
+[0m00:18:14.095998 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:18:14.107532 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:18:14.118125 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:18:14.122104 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:18:14.123613 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate'
+[0m00:18:14.164027 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:18:14.164027 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:18:14.165062 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:18:14.165062 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate"
+[0m00:18:14.165062 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:18:14.166081 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:18:14.166081 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:18:14.167070 [debug] [ThreadPool]: On list_db_Real_Estate: show terse schemas in database db_Real_Estate
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate"} */
+[0m00:18:14.167070 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:14.167070 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:14.168077 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:14.168077 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:15.099494 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.931 seconds
+[0m00:18:15.100432 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.933 seconds
+[0m00:18:15.110005 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.943 seconds
+[0m00:18:15.116457 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.948 seconds
+[0m00:18:15.119429 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_marts)
+[0m00:18:15.120443 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging)
+[0m00:18:15.121442 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_ml)
+[0m00:18:15.122826 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_Real_Estate, now create_db_Real_Estate_staging_kpi)
+[0m00:18:15.124420 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_marts"
+"
+[0m00:18:15.125539 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging"
+"
+[0m00:18:15.126438 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_ml"
+"
+[0m00:18:15.128435 [debug] [ThreadPool]: Creating schema "database: "db_Real_Estate"
+schema: "staging_kpi"
+"
+[0m00:18:15.136465 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_marts"
+[0m00:18:15.141352 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging"
+[0m00:18:15.144501 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_ml"
+[0m00:18:15.148607 [debug] [ThreadPool]: Using snowflake connection "create_db_Real_Estate_staging_kpi"
+[0m00:18:15.149616 [debug] [ThreadPool]: On create_db_Real_Estate_staging_marts: create schema if not exists db_Real_Estate.staging_marts
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_marts"} */
+[0m00:18:15.150357 [debug] [ThreadPool]: On create_db_Real_Estate_staging: create schema if not exists db_Real_Estate.staging
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging"} */
+[0m00:18:15.150357 [debug] [ThreadPool]: On create_db_Real_Estate_staging_ml: create schema if not exists db_Real_Estate.staging_ml
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_ml"} */
+[0m00:18:15.151367 [debug] [ThreadPool]: On create_db_Real_Estate_staging_kpi: create schema if not exists db_Real_Estate.staging_kpi
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "create_db_Real_Estate_staging_kpi"} */
+[0m00:18:15.302396 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.150 seconds
+[0m00:18:15.321563 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.166 seconds
+[0m00:18:15.325207 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.172 seconds
+[0m00:18:15.367593 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.213 seconds
+[0m00:18:15.374105 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_marts'
+[0m00:18:15.376181 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging'
+[0m00:18:15.402398 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_marts"
+[0m00:18:15.403954 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_ml'
+[0m00:18:15.408688 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging"
+[0m00:18:15.409665 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_Real_Estate_staging_kpi'
+[0m00:18:15.409665 [debug] [ThreadPool]: On list_db_Real_Estate_staging_marts: show objects in db_Real_Estate.staging_marts
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_marts"} */;
+[0m00:18:15.415205 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_ml"
+[0m00:18:15.415788 [debug] [ThreadPool]: On list_db_Real_Estate_staging: show objects in db_Real_Estate.staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging"} */;
+[0m00:18:15.420796 [debug] [ThreadPool]: Using snowflake connection "list_db_Real_Estate_staging_kpi"
+[0m00:18:15.421797 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:15.421797 [debug] [ThreadPool]: On list_db_Real_Estate_staging_ml: show objects in db_Real_Estate.staging_ml
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_ml"} */;
+[0m00:18:15.422797 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:15.423796 [debug] [ThreadPool]: On list_db_Real_Estate_staging_kpi: show objects in db_Real_Estate.staging_kpi
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "connection_name": "list_db_Real_Estate_staging_kpi"} */;
+[0m00:18:15.424303 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:15.428428 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:18:16.019865 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.596 seconds
+[0m00:18:16.036201 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.617 seconds
+[0m00:18:16.071557 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.643 seconds
+[0m00:18:16.234067 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.812 seconds
+[0m00:18:16.242243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F069590>]}
+[0m00:18:16.262823 [debug] [Thread-2 (]: Began running node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:18:16.263823 [debug] [Thread-3 (]: Began running node model.rhodes_analytics.stg_regional_lookup
+[0m00:18:16.264555 [info ] [Thread-2 (]: 1 of 9 START sql view model staging.stg_homebuilder_sales ...................... [RUN]
+[0m00:18:16.267586 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.rhodes_analytics.stg_homebuilder_sales'
+[0m00:18:16.266584 [info ] [Thread-3 (]: 2 of 9 START sql view model staging.stg_regional_lookup ........................ [RUN]
+[0m00:18:16.268581 [debug] [Thread-2 (]: Began compiling node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:18:16.269587 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.rhodes_analytics.stg_regional_lookup'
+[0m00:18:16.277969 [debug] [Thread-2 (]: Writing injected SQL for node "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:18:16.277969 [debug] [Thread-3 (]: Began compiling node model.rhodes_analytics.stg_regional_lookup
+[0m00:18:16.281572 [debug] [Thread-3 (]: Writing injected SQL for node "model.rhodes_analytics.stg_regional_lookup"
+[0m00:18:16.282647 [debug] [Thread-2 (]: Began executing node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:18:16.322174 [debug] [Thread-3 (]: Began executing node model.rhodes_analytics.stg_regional_lookup
+[0m00:18:16.329227 [debug] [Thread-2 (]: Writing runtime sql for node "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:18:16.335885 [debug] [Thread-3 (]: Writing runtime sql for node "model.rhodes_analytics.stg_regional_lookup"
+[0m00:18:16.335885 [debug] [Thread-2 (]: Using snowflake connection "model.rhodes_analytics.stg_homebuilder_sales"
+[0m00:18:16.335885 [debug] [Thread-2 (]: On model.rhodes_analytics.stg_homebuilder_sales: create or replace   view db_Real_Estate.staging.stg_homebuilder_sales
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: stg_homebuilder_sales
+-- Layer: Staging
+-- Purpose: Clean and standardize raw sales data
+-- =========================================================
+
+select
+
+    -- Primary Identifiers
+    cast(CONTRACT_ID as varchar) as CONTRACT_ID,
+
+    -- Location Attributes
+    cast(COMMUNITY as varchar) as COMMUNITY,
+    cast(CITY as varchar) as CITY,
+    cast(REGION as varchar) as REGION,
+
+    -- Product Attributes
+    cast(PLAN_NAME as varchar) as PLAN_NAME,
+    cast(SQFT as integer) as SQFT,
+    cast(BEDROOMS as integer) as BEDROOMS,
+    cast(BATHROOMS as number(3,1)) as BATHROOMS,
+
+    -- Financials
+    cast(BASE_PRICE as number(12,2)) as BASE_PRICE,
+    cast(UPGRADE_AMOUNT as number(12,2)) as UPGRADE_AMOUNT,
+    cast(INCENTIVE_AMOUNT as number(12,2)) as INCENTIVE_AMOUNT,
+    cast(CONTRACT_PRICE as number(12,2)) as CONTRACT_PRICE,
+    cast(AGENT_COMMISSION as number(12,2)) as AGENT_COMMISSION,
+
+    -- Dates
+    cast(CONTRACT_DATE as date) as CONTRACT_DATE,
+    cast(CLOSE_DATE as date) as CLOSE_DATE,
+
+    -- Performance Metrics
+    cast(DAYS_TO_CLOSE as integer) as DAYS_TO_CLOSE,
+
+    -- Status / Business Attributes
+    cast(STATUS as varchar) as STATUS,
+    cast(BUYER_SOURCE as varchar) as BUYER_SOURCE,
+    cast(LOAN_TYPE as varchar) as LOAN_TYPE,
+    cast(SALES_CONSULTANT as varchar) as SALES_CONSULTANT
+
+from DB_REAL_ESTATE.RAW.HOMEBUILDER_SALES
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.stg_homebuilder_sales"} */;
+[0m00:18:16.341429 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:18:16.341429 [debug] [Thread-3 (]: Using snowflake connection "model.rhodes_analytics.stg_regional_lookup"
+[0m00:18:16.346239 [debug] [Thread-3 (]: On model.rhodes_analytics.stg_regional_lookup: create or replace   view db_Real_Estate.staging.stg_regional_lookup
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: stg_regional_lookup
+-- Layer: Staging
+-- Purpose: Clean regional dimension for slicing & KPI joins
+-- =========================================================
+
+select
+
+    cast(REGION as varchar) as REGION,
+    cast(REGIONAL_MANAGER as varchar) as REGIONAL_MANAGER,
+
+    -- Targets (used for performance slicing)
+    cast(SALES_TARGET_UNITS as integer) as SALES_TARGET_UNITS,
+    cast(MARGIN_TARGET_PCT as number(5,2)) as MARGIN_TARGET_PCT
+
+from DB_REAL_ESTATE.RAW.REGIONAL_MANAGER_LOOKUP
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.stg_regional_lookup"} */;
+[0m00:18:16.348240 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:18:17.072190 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.723 seconds
+[0m00:18:17.187895 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F541910>]}
+[0m00:18:17.192254 [info ] [Thread-3 (]: 2 of 9 OK created sql view model staging.stg_regional_lookup ................... [[32mSUCCESS 1[0m in 0.91s]
+[0m00:18:17.198397 [debug] [Thread-3 (]: Finished running node model.rhodes_analytics.stg_regional_lookup
+[0m00:18:17.519363 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.177 seconds
+[0m00:18:17.525927 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA50923DD0>]}
+[0m00:18:17.527431 [info ] [Thread-2 (]: 1 of 9 OK created sql view model staging.stg_homebuilder_sales ................. [[32mSUCCESS 1[0m in 1.26s]
+[0m00:18:17.531431 [debug] [Thread-2 (]: Finished running node model.rhodes_analytics.stg_homebuilder_sales
+[0m00:18:17.535514 [debug] [Thread-5 (]: Began running node model.rhodes_analytics.ai_kpi_context
+[0m00:18:17.540500 [debug] [Thread-6 (]: Began running node model.rhodes_analytics.dim_consultant
+[0m00:18:17.541792 [debug] [Thread-7 (]: Began running node model.rhodes_analytics.dim_region
+[0m00:18:17.543809 [debug] [Thread-8 (]: Began running node model.rhodes_analytics.fct_sales
+[0m00:18:17.545390 [debug] [Thread-9 (]: Began running node model.rhodes_analytics.kpi_summary
+[0m00:18:17.548210 [debug] [Thread-10 ]: Began running node model.rhodes_analytics.monthly_trends
+[0m00:18:17.544322 [info ] [Thread-5 (]: 3 of 9 START sql view model staging.ai_kpi_context ............................. [RUN]
+[0m00:18:17.550793 [debug] [Thread-11 ]: Began running node model.rhodes_analytics.sales_forecast
+[0m00:18:17.554342 [info ] [Thread-6 (]: 4 of 9 START sql table model staging_marts.dim_consultant ...................... [RUN]
+[0m00:18:17.563582 [info ] [Thread-7 (]: 5 of 9 START sql table model staging_marts.dim_region .......................... [RUN]
+[0m00:18:17.570339 [info ] [Thread-8 (]: 6 of 9 START sql table model staging_marts.fct_sales ........................... [RUN]
+[0m00:18:17.574427 [info ] [Thread-9 (]: 7 of 9 START sql table model staging_kpi.kpi_summary ........................... [RUN]
+[0m00:18:17.582493 [info ] [Thread-10 ]: 8 of 9 START sql table model staging_marts.monthly_trends ...................... [RUN]
+[0m00:18:17.588058 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.rhodes_analytics.ai_kpi_context'
+[0m00:18:17.592734 [info ] [Thread-11 ]: 9 of 9 START sql table model staging_ml.sales_forecast ......................... [RUN]
+[0m00:18:17.598082 [debug] [Thread-6 (]: Acquiring new snowflake connection 'model.rhodes_analytics.dim_consultant'
+[0m00:18:17.602180 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.rhodes_analytics.dim_region'
+[0m00:18:17.605294 [debug] [Thread-8 (]: Acquiring new snowflake connection 'model.rhodes_analytics.fct_sales'
+[0m00:18:17.610385 [debug] [Thread-9 (]: Acquiring new snowflake connection 'model.rhodes_analytics.kpi_summary'
+[0m00:18:17.612391 [debug] [Thread-10 ]: Acquiring new snowflake connection 'model.rhodes_analytics.monthly_trends'
+[0m00:18:17.616417 [debug] [Thread-5 (]: Began compiling node model.rhodes_analytics.ai_kpi_context
+[0m00:18:17.619053 [debug] [Thread-11 ]: Acquiring new snowflake connection 'model.rhodes_analytics.sales_forecast'
+[0m00:18:17.622023 [debug] [Thread-6 (]: Began compiling node model.rhodes_analytics.dim_consultant
+[0m00:18:17.626185 [debug] [Thread-7 (]: Began compiling node model.rhodes_analytics.dim_region
+[0m00:18:17.629207 [debug] [Thread-8 (]: Began compiling node model.rhodes_analytics.fct_sales
+[0m00:18:17.632237 [debug] [Thread-9 (]: Began compiling node model.rhodes_analytics.kpi_summary
+[0m00:18:17.634430 [debug] [Thread-10 ]: Began compiling node model.rhodes_analytics.monthly_trends
+[0m00:18:17.645366 [debug] [Thread-5 (]: Writing injected SQL for node "model.rhodes_analytics.ai_kpi_context"
+[0m00:18:17.647337 [debug] [Thread-11 ]: Began compiling node model.rhodes_analytics.sales_forecast
+[0m00:18:17.656562 [debug] [Thread-6 (]: Writing injected SQL for node "model.rhodes_analytics.dim_consultant"
+[0m00:18:17.666086 [debug] [Thread-7 (]: Writing injected SQL for node "model.rhodes_analytics.dim_region"
+[0m00:18:17.674266 [debug] [Thread-8 (]: Writing injected SQL for node "model.rhodes_analytics.fct_sales"
+[0m00:18:17.683571 [debug] [Thread-9 (]: Writing injected SQL for node "model.rhodes_analytics.kpi_summary"
+[0m00:18:17.692023 [debug] [Thread-10 ]: Writing injected SQL for node "model.rhodes_analytics.monthly_trends"
+[0m00:18:17.701757 [debug] [Thread-11 ]: Writing injected SQL for node "model.rhodes_analytics.sales_forecast"
+[0m00:18:17.704130 [debug] [Thread-5 (]: Began executing node model.rhodes_analytics.ai_kpi_context
+[0m00:18:17.705964 [debug] [Thread-6 (]: Began executing node model.rhodes_analytics.dim_consultant
+[0m00:18:17.708234 [debug] [Thread-7 (]: Began executing node model.rhodes_analytics.dim_region
+[0m00:18:17.711600 [debug] [Thread-8 (]: Began executing node model.rhodes_analytics.fct_sales
+[0m00:18:17.713604 [debug] [Thread-9 (]: Began executing node model.rhodes_analytics.kpi_summary
+[0m00:18:17.716180 [debug] [Thread-10 ]: Began executing node model.rhodes_analytics.monthly_trends
+[0m00:18:17.727055 [debug] [Thread-5 (]: Writing runtime sql for node "model.rhodes_analytics.ai_kpi_context"
+[0m00:18:17.728993 [debug] [Thread-11 ]: Began executing node model.rhodes_analytics.sales_forecast
+[0m00:18:17.796069 [debug] [Thread-6 (]: Writing runtime sql for node "model.rhodes_analytics.dim_consultant"
+[0m00:18:17.806829 [debug] [Thread-7 (]: Writing runtime sql for node "model.rhodes_analytics.dim_region"
+[0m00:18:17.814296 [debug] [Thread-8 (]: Writing runtime sql for node "model.rhodes_analytics.fct_sales"
+[0m00:18:17.822306 [debug] [Thread-9 (]: Writing runtime sql for node "model.rhodes_analytics.kpi_summary"
+[0m00:18:17.832817 [debug] [Thread-10 ]: Writing runtime sql for node "model.rhodes_analytics.monthly_trends"
+[0m00:18:17.842433 [debug] [Thread-11 ]: Writing runtime sql for node "model.rhodes_analytics.sales_forecast"
+[0m00:18:17.844764 [debug] [Thread-5 (]: Using snowflake connection "model.rhodes_analytics.ai_kpi_context"
+[0m00:18:17.847578 [debug] [Thread-6 (]: Using snowflake connection "model.rhodes_analytics.dim_consultant"
+[0m00:18:17.852631 [debug] [Thread-7 (]: Using snowflake connection "model.rhodes_analytics.dim_region"
+[0m00:18:17.856333 [debug] [Thread-9 (]: Using snowflake connection "model.rhodes_analytics.kpi_summary"
+[0m00:18:17.859332 [debug] [Thread-8 (]: Using snowflake connection "model.rhodes_analytics.fct_sales"
+[0m00:18:17.861332 [debug] [Thread-5 (]: On model.rhodes_analytics.ai_kpi_context: create or replace   view db_Real_Estate.staging.ai_kpi_context
+  
+  
+  
+  
+  as (
+    -- =========================================================
+-- Model: ai_kpi_context
+-- Layer: AI / Semantic + Narrative
+-- Purpose: Business-explainable AI grounding layer
+-- =========================================================
+
+select
+
+    'TOTAL_SALES' as KPI_NAME,
+
+    'Total revenue generated from all closed homebuilder contracts' as BUSINESS_DEFINITION,
+
+    sum(CONTRACT_PRICE) as CURRENT_VALUE,
+
+    'Primary revenue driver for company performance' as BUSINESS_IMPORTANCE,
+
+    case
+        when sum(CONTRACT_PRICE) > 10000000 then 'Strong performance'
+        when sum(CONTRACT_PRICE) between 5000000 and 10000000 then 'Moderate performance'
+        else 'Below expectations'
+    end as PERFORMANCE_STATE
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+
+union all
+
+select
+
+    'AVG_DAYS_TO_CLOSE',
+    'Average number of days required to close a home sale',
+    avg(DAYS_TO_CLOSE),
+    'Operational efficiency indicator',
+    case
+        when avg(DAYS_TO_CLOSE) < 30 then 'Efficient'
+        when avg(DAYS_TO_CLOSE) between 30 and 60 then 'Normal'
+        else 'Slow cycle'
+    end
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+
+union all
+
+select
+
+    'AVG_CONTRACT_PRICE',
+    'Average selling price per home contract across all regions',
+    avg(CONTRACT_PRICE),
+    'Measures pricing strength and product mix',
+    case
+        when avg(CONTRACT_PRICE) > 500000 then 'High value mix'
+        when avg(CONTRACT_PRICE) between 300000 and 500000 then 'Mid-market mix'
+        else 'Low value mix'
+    end
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+  )
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.ai_kpi_context"} */;
+[0m00:18:17.865453 [debug] [Thread-10 ]: Using snowflake connection "model.rhodes_analytics.monthly_trends"
+[0m00:18:17.867409 [debug] [Thread-6 (]: On model.rhodes_analytics.dim_consultant: create or replace transient table db_Real_Estate.staging_marts.dim_consultant
+    
+    
+    
+    as (-- =========================================================
+-- Model: dim_consultant
+-- Layer: Mart (Dimension)
+-- Purpose: Sales consultant performance tracking
+-- =========================================================
+
+select
+
+    SALES_CONSULTANT,
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE,
+
+    avg(DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+
+group by SALES_CONSULTANT
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.dim_consultant"} */;
+[0m00:18:17.870403 [debug] [Thread-11 ]: Using snowflake connection "model.rhodes_analytics.sales_forecast"
+[0m00:18:17.871402 [debug] [Thread-7 (]: On model.rhodes_analytics.dim_region: create or replace transient table db_Real_Estate.staging_marts.dim_region
+    
+    
+    
+    as (-- =========================================================
+-- Model: dim_region
+-- Layer: Mart (Dimension)
+-- Purpose: Enables slicing, targeting, and performance comparison
+-- =========================================================
+
+with sales as (
+    select *
+    from db_Real_Estate.staging.stg_homebuilder_sales
+),
+
+region_lookup as (
+    select *
+    from db_Real_Estate.staging.stg_regional_lookup
+)
+
+select
+
+    -- =========================
+    -- DIMENSION KEY
+    -- =========================
+    s.REGION,
+
+    -- =========================
+    -- CONTEXT (slice/dice fields)
+    -- =========================
+    r.REGIONAL_MANAGER,
+
+    -- =========================
+    -- ACTUAL PERFORMANCE
+    -- =========================
+    count(s.CONTRACT_ID) as TOTAL_CONTRACTS,
+    sum(s.CONTRACT_PRICE) as TOTAL_SALES,
+    avg(s.CONTRACT_PRICE) as AVG_SALES_PRICE,
+    avg(s.DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE,
+
+    -- =========================
+    -- TARGETS (FROM LOOKUP)
+    -- =========================
+    max(r.SALES_TARGET_UNITS) as SALES_TARGET_UNITS,
+    max(r.MARGIN_TARGET_PCT) as MARGIN_TARGET_PCT,
+
+    -- =========================
+    -- PERFORMANCE GAP (VERY IMPORTANT)
+    -- =========================
+    count(s.CONTRACT_ID) - max(r.SALES_TARGET_UNITS) as CONTRACT_GAP
+
+from sales s
+
+left join region_lookup r
+    on s.REGION = r.REGION
+
+group by
+    s.REGION,
+    r.REGIONAL_MANAGER
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.dim_region"} */;
+[0m00:18:17.872403 [debug] [Thread-9 (]: On model.rhodes_analytics.kpi_summary: create or replace transient table db_Real_Estate.staging_kpi.kpi_summary
+    
+    
+    
+    as (-- =========================================================
+-- Model: kpi_summary
+-- Layer: KPI Mart
+-- Purpose: Executive-level aggregated KPIs
+-- =========================================================
+
+select
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE,
+
+    avg(DAYS_TO_CLOSE) as AVG_DAYS_TO_CLOSE,
+
+    sum(AGENT_COMMISSION) as TOTAL_COMMISSION
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.kpi_summary"} */;
+[0m00:18:17.874592 [debug] [Thread-8 (]: On model.rhodes_analytics.fct_sales: create or replace transient table db_Real_Estate.staging_marts.fct_sales
+    
+    
+    
+    as (-- =========================================================
+-- Model: fct_sales
+-- Layer: Fact
+-- Purpose: Central sales fact table for analytics
+-- =========================================================
+
+select
+
+    CONTRACT_ID,
+    REGION,
+    COMMUNITY,
+    SALES_CONSULTANT,
+    CONTRACT_DATE,
+    CLOSE_DATE,
+    STATUS,
+
+    CONTRACT_PRICE,
+    DAYS_TO_CLOSE,
+
+    -- Derived fields for analysis
+    date_trunc('month', CONTRACT_DATE) as CONTRACT_MONTH,
+
+    CONTRACT_PRICE - BASE_PRICE as NET_UPLIFT
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.fct_sales"} */;
+[0m00:18:17.875601 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m00:18:17.877294 [debug] [Thread-10 ]: On model.rhodes_analytics.monthly_trends: create or replace transient table db_Real_Estate.staging_marts.monthly_trends
+    
+    
+    
+    as (-- =========================================================
+-- Model: monthly_trends
+-- Layer: Mart
+-- Purpose: Time-series sales performance
+-- =========================================================
+
+select
+
+    date_trunc('month', CONTRACT_DATE) as MONTH,
+
+    count(*) as TOTAL_CONTRACTS,
+
+    sum(CONTRACT_PRICE) as TOTAL_SALES,
+
+    avg(CONTRACT_PRICE) as AVG_CONTRACT_PRICE
+
+from db_Real_Estate.staging.stg_homebuilder_sales
+
+group by 1
+order by 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.monthly_trends"} */;
+[0m00:18:17.879273 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m00:18:17.881762 [debug] [Thread-11 ]: On model.rhodes_analytics.sales_forecast: create or replace transient table db_Real_Estate.staging_ml.sales_forecast
+    
+    
+    
+    as (-- =========================================================
+-- Model: sales_forecast
+-- Layer: ML / Analytics
+-- Purpose: Simple time-series forecast baseline for sales
+-- =========================================================
+
+with monthly as (
+
+    select
+        date_trunc('month', CONTRACT_DATE) as MONTH,
+        sum(CONTRACT_PRICE) as TOTAL_SALES
+    from db_Real_Estate.staging.stg_homebuilder_sales
+    group by 1
+),
+
+features as (
+
+    select
+        MONTH,
+        TOTAL_SALES,
+        row_number() over (order by MONTH) as TIME_INDEX
+    from monthly
+)
+
+select
+
+    MONTH,
+    TOTAL_SALES,
+
+    -- Simple linear trend projection (baseline forecast)
+    avg(TOTAL_SALES) over (
+        order by TIME_INDEX
+        rows between 2 preceding and 0 preceding
+    ) as MOVING_AVG_3M,
+
+    -- Trend indicator
+    TOTAL_SALES -
+    lag(TOTAL_SALES) over (order by MONTH) as MOM_CHANGE
+
+from features
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "rhodes_analytics", "target_name": "dev", "node_id": "model.rhodes_analytics.sales_forecast"} */;
+[0m00:18:17.882800 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m00:18:17.884287 [debug] [Thread-9 (]: Opening a new connection, currently in state init
+[0m00:18:17.885328 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m00:18:17.887294 [debug] [Thread-10 ]: Opening a new connection, currently in state init
+[0m00:18:17.891846 [debug] [Thread-11 ]: Opening a new connection, currently in state init
+[0m00:18:19.331349 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.456 seconds
+[0m00:18:19.335646 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA50A64290>]}
+[0m00:18:19.336651 [info ] [Thread-5 (]: 3 of 9 OK created sql view model staging.ai_kpi_context ........................ [[32mSUCCESS 1[0m in 1.75s]
+[0m00:18:19.339657 [debug] [Thread-5 (]: Finished running node model.rhodes_analytics.ai_kpi_context
+[0m00:18:19.950422 [debug] [Thread-10 ]: SQL status: SUCCESS 22 in 2.062 seconds
+[0m00:18:19.953414 [debug] [Thread-9 (]: SQL status: SUCCESS 1 in 2.069 seconds
+[0m00:18:19.958734 [debug] [Thread-8 (]: SQL status: SUCCESS 600 in 2.073 seconds
+[0m00:18:19.965745 [debug] [Thread-10 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F345DD0>]}
+[0m00:18:19.970767 [debug] [Thread-7 (]: SQL status: SUCCESS 3 in 2.088 seconds
+[0m00:18:19.979337 [debug] [Thread-9 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA508980D0>]}
+[0m00:18:19.984404 [debug] [Thread-6 (]: SQL status: SUCCESS 6 in 2.104 seconds
+[0m00:18:19.993958 [debug] [Thread-11 ]: SQL status: SUCCESS 22 in 2.102 seconds
+[0m00:18:19.996539 [debug] [Thread-8 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F2A5790>]}
+[0m00:18:20.000542 [info ] [Thread-10 ]: 8 of 9 OK created sql table model staging_marts.monthly_trends ................. [[32mSUCCESS 22[0m in 2.35s]
+[0m00:18:20.012269 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4F558D90>]}
+[0m00:18:20.016739 [info ] [Thread-9 (]: 7 of 9 OK created sql table model staging_kpi.kpi_summary ...................... [[32mSUCCESS 1[0m in 2.37s]
+[0m00:18:20.028258 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA4EE58550>]}
+[0m00:18:20.040426 [debug] [Thread-11 ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c329295d-b734-4bc2-86a6-511bc1f96dfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA51AF7390>]}
+[0m00:18:20.043421 [info ] [Thread-8 (]: 6 of 9 OK created sql table model staging_marts.fct_sales ...................... [[32mSUCCESS 600[0m in 2.39s]
+[0m00:18:20.049890 [debug] [Thread-10 ]: Finished running node model.rhodes_analytics.monthly_trends
+[0m00:18:20.053487 [info ] [Thread-7 (]: 5 of 9 OK created sql table model staging_marts.dim_region ..................... [[32mSUCCESS 3[0m in 2.41s]
+[0m00:18:20.060467 [debug] [Thread-9 (]: Finished running node model.rhodes_analytics.kpi_summary
+[0m00:18:20.065524 [info ] [Thread-6 (]: 4 of 9 OK created sql table model staging_marts.dim_consultant ................. [[32mSUCCESS 6[0m in 2.43s]
+[0m00:18:20.072538 [info ] [Thread-11 ]: 9 of 9 OK created sql table model staging_ml.sales_forecast .................... [[32mSUCCESS 22[0m in 2.42s]
+[0m00:18:20.077641 [debug] [Thread-8 (]: Finished running node model.rhodes_analytics.fct_sales
+[0m00:18:20.083649 [debug] [Thread-7 (]: Finished running node model.rhodes_analytics.dim_region
+[0m00:18:20.090868 [debug] [Thread-6 (]: Finished running node model.rhodes_analytics.dim_consultant
+[0m00:18:20.095577 [debug] [Thread-11 ]: Finished running node model.rhodes_analytics.sales_forecast
+[0m00:18:20.109579 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:18:20.111422 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_ml' was left open.
+[0m00:18:20.112424 [debug] [MainThread]: On create_db_Real_Estate_staging_ml: Close
+[0m00:18:20.290592 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging' was left open.
+[0m00:18:20.292580 [debug] [MainThread]: On create_db_Real_Estate_staging: Close
+[0m00:18:20.481752 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_kpi' was left open.
+[0m00:18:20.484319 [debug] [MainThread]: On create_db_Real_Estate_staging_kpi: Close
+[0m00:18:20.653902 [debug] [MainThread]: Connection 'create_db_Real_Estate_staging_marts' was left open.
+[0m00:18:20.655442 [debug] [MainThread]: On create_db_Real_Estate_staging_marts: Close
+[0m00:18:20.845662 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_marts' was left open.
+[0m00:18:20.848657 [debug] [MainThread]: On list_db_Real_Estate_staging_marts: Close
+[0m00:18:21.050775 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging' was left open.
+[0m00:18:21.052879 [debug] [MainThread]: On list_db_Real_Estate_staging: Close
+[0m00:18:21.234125 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_ml' was left open.
+[0m00:18:21.236154 [debug] [MainThread]: On list_db_Real_Estate_staging_ml: Close
+[0m00:18:21.409340 [debug] [MainThread]: Connection 'list_db_Real_Estate_staging_kpi' was left open.
+[0m00:18:21.411350 [debug] [MainThread]: On list_db_Real_Estate_staging_kpi: Close
+[0m00:18:21.589365 [debug] [MainThread]: Connection 'model.rhodes_analytics.stg_homebuilder_sales' was left open.
+[0m00:18:21.591362 [debug] [MainThread]: On model.rhodes_analytics.stg_homebuilder_sales: Close
+[0m00:18:21.761668 [debug] [MainThread]: Connection 'model.rhodes_analytics.stg_regional_lookup' was left open.
+[0m00:18:21.763609 [debug] [MainThread]: On model.rhodes_analytics.stg_regional_lookup: Close
+[0m00:18:21.971025 [debug] [MainThread]: Connection 'model.rhodes_analytics.ai_kpi_context' was left open.
+[0m00:18:21.973493 [debug] [MainThread]: On model.rhodes_analytics.ai_kpi_context: Close
+[0m00:18:22.178393 [debug] [MainThread]: Connection 'model.rhodes_analytics.dim_consultant' was left open.
+[0m00:18:22.181398 [debug] [MainThread]: On model.rhodes_analytics.dim_consultant: Close
+[0m00:18:22.374147 [debug] [MainThread]: Connection 'model.rhodes_analytics.dim_region' was left open.
+[0m00:18:22.375496 [debug] [MainThread]: On model.rhodes_analytics.dim_region: Close
+[0m00:18:22.544942 [debug] [MainThread]: Connection 'model.rhodes_analytics.fct_sales' was left open.
+[0m00:18:22.545645 [debug] [MainThread]: On model.rhodes_analytics.fct_sales: Close
+[0m00:18:22.725325 [debug] [MainThread]: Connection 'model.rhodes_analytics.kpi_summary' was left open.
+[0m00:18:22.727333 [debug] [MainThread]: On model.rhodes_analytics.kpi_summary: Close
+[0m00:18:22.932277 [debug] [MainThread]: Connection 'model.rhodes_analytics.monthly_trends' was left open.
+[0m00:18:22.935579 [debug] [MainThread]: On model.rhodes_analytics.monthly_trends: Close
+[0m00:18:23.159189 [debug] [MainThread]: Connection 'model.rhodes_analytics.sales_forecast' was left open.
+[0m00:18:23.160104 [debug] [MainThread]: On model.rhodes_analytics.sales_forecast: Close
+[0m00:18:23.363607 [info ] [MainThread]: 
+[0m00:18:23.367135 [info ] [MainThread]: Finished running 6 table models, 3 view models in 0 hours 0 minutes and 9.27 seconds (9.27s).
+[0m00:18:23.376925 [debug] [MainThread]: Command end result
+[0m00:18:23.493582 [debug] [MainThread]: Wrote artifact WritableManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\manifest.json
+[0m00:18:23.500135 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\semantic_manifest.json
+[0m00:18:23.514986 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\projects\VsCodeWorkSpace\streamlit-for-snowflake\dbt\target\run_results.json
+[0m00:18:23.517009 [info ] [MainThread]: 
+[0m00:18:23.519001 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:18:23.523546 [info ] [MainThread]: 
+[0m00:18:23.525851 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=9
+[0m00:18:23.532130 [debug] [MainThread]: Command `dbt run` succeeded at 00:18:23.532130 after 11.88 seconds
+[0m00:18:23.536213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA2B84EDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA3344DDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA2B5742D0>]}
+[0m00:18:23.540210 [debug] [MainThread]: Flushing usage events
+[0m00:18:24.936572 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,60 @@
+name: 'rhodes_analytics'
+version: '1.0.0'
+
+# The profile name must match your profiles.yml
+profile: 'rhodes_analytics'
+
+# Where dbt will look for your models
+model-paths: ["models"]
+
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# ============================
+# MODEL CONFIGURATION
+# ============================
+models:
+
+  rhodes_analytics:
+
+    # ------------------------
+    # STAGING LAYER
+    # ------------------------
+    staging:
+      +materialized: view
+      #+schema: staging
+
+    # ------------------------
+    # MARTS LAYER (BUSINESS LOGIC)
+    # ------------------------
+    marts:
+      +materialized: table
+      +schema: marts
+
+    # ------------------------
+    # KPI LAYER (EXECUTIVE METRICS)
+    # ------------------------
+    kpi:
+      +materialized: table
+      +schema: kpi
+
+    # ------------------------
+    # AI / SEMANTIC LAYER
+    # ------------------------
+    ai:
+      +materialized: view
+      +schema: ai
+
+    # ------------------------
+    # ML / FORECASTING LAYER
+    # ------------------------
+    ml:
+      +materialized: table
+      +schema: ml
